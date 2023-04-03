@@ -19,6 +19,9 @@ const useStyles = makeStyles((theme) => ({
       fontFamily: 'Roboto',
       fontWeight:'bold'
     },
+    a:{
+      color:"white"
+    }
     
   }));
   
@@ -38,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
             {loggedIn ? (
               <Button color="inherit">Logout</Button>
             ) : (
-              <Button color="inherit">Login</Button>
+              <a href='/login' ><Button className={classes.a} color="inherit">Login</Button></a>
             )}
           </Toolbar>
         </AppBar>
